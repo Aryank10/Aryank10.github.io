@@ -73,3 +73,6 @@ document.addEventListener("DOMContentLoaded", function(){
   });
   
 
+  $(window).load(function() {
+    $(".se-pre-con").fadeOut("slow");;
+  });
