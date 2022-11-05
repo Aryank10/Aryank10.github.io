@@ -277,7 +277,15 @@ nav ul li a:hover{
     } 
 }
 
-
+@media screen and (max-device-width: 1000px) and (orientation: landscape) {
+    .home-pg-texts{
+        margin: 0px !important;
+    }
+    .glow{
+        font-size: 40px !important;
+    }
+}
+  
 
 
 
