@@ -354,10 +354,14 @@ nav ul li a:hover{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-.insta-btn{
-    text-align: left;
-    margin: 3%;
-
+.btn-social{
+    display: inline-block;
+    margin: 3% 1% 3%;
+}
+.social{
+    display: flex;
+    align-items: left;
+    flex-direction: row;
 }
 .bn13 {
     padding: 1em 1.6em;
@@ -590,7 +594,7 @@ nav ul li a:hover{
 
 .contact{
     width: 65%;
-    height: fit-content;
+    height: 85vh;
     border: solid 1px var(--primary-);
     box-shadow: 1px 1px 10px #00C2FB;
     display: flex;
@@ -638,7 +642,7 @@ max-height: 35vh;
     }
     .contact{
         width: 90%;
-        height: fit-content;
+        height: 85vh;
         border: solid 1px var(--primary-);
         box-shadow: 1px 1px 10px #00C2FB;
         display: flex;
@@ -648,3 +652,73 @@ max-height: 35vh;
     }
 }
 
+.footer{
+    height: 120px;
+    background-color: var(--dark-);
+}
+.footerLogo{
+    cursor:  default !important;
+}
+.footeRight{
+    padding-top: 10px;
+}
+.footerLeft{
+    text-align: center;
+}
+.footerLeft h1{
+    color: var(--pure-);
+    margin:10px 0 10px 0 ;
+}
+.bn3 {
+    display: inline-block;
+    padding: 0.5em 1.7em;
+    margin: 0 0.6em 0.6em 0;
+    border: 0.16em solid var(--pure-);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: var(--pure-);
+    text-shadow: 0 0.04em 0.04em var(--light-);
+    text-align: center;
+    transition: all 0.2s;
+  }
+  
+  .bn3:hover {
+    color: black;
+    background-color: var(--pure-);
+  }
+  .published{
+    background-color: var(--black-);
+    text-align: center;
+    padding: 10px 0 ;
+  }
+  .published h1{
+    font-size: 20px;
+    color: var(--pure-);
+
+  }
+  .blue{
+    color: var(--primary-) !important;
+  }
+@media (min-width:100px) and (max-width:576px){
+    .footer{
+        height: fit-content;
+    }
+    .footeRight{
+        width: 100%;
+        text-align: center;
+
+    }
+    .footeRight::after{
+        content: "";
+        display:block;
+        background-color: var(--pure-);
+        height: 1px;
+    }
+    .footerLeft{
+        text-align: center;
+   }
+   
+}
