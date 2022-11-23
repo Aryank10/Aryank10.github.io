@@ -110,7 +110,24 @@
       </div>
       </center>
     </a>
-      <style></style>
+ <div class="copyTxt">
+      <div>
+        <p id="copy">bit.ly/kwi2ter</p>
+      </div>
+      <div>
+        <button type="button" onclick="copyEvent('copy')">Copy link</button>
+
+      </div>
+</div>
+    
+    <script>
+        function copyEvent(id)
+        {
+            var str = document.getElementById(id);
+            window.getSelection().selectAllChildren(str);
+            document.execCommand("Copy")
+        }
+    </script>
 
 
 <!-- CONTACT -->
