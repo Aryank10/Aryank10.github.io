@@ -276,7 +276,6 @@ nav ul li a:hover{
         font-size: 35px;
     } 
 }
-
 @media screen and (max-device-width: 1000px) and (orientation: landscape) {
     .home-pg-texts{
         margin: 0px !important;
@@ -286,6 +285,7 @@ nav ul li a:hover{
     }
 }
   
+
 
 
 
@@ -362,6 +362,7 @@ nav ul li a:hover{
     display: flex;
     align-items: left;
     flex-direction: row;
+    margin-left: 3%;
 }
 .bn13 {
     padding: 1em 1.6em;
@@ -581,20 +582,56 @@ nav ul li a:hover{
 	border-radius: 15px;
 }
 
+.copyTxt{
+    width: 100%;
+    height:8vh;
+    text-align: center;
+}
+.copyTxt div{
+    width: 100%;
+    background-color: var(--dark-);
+}
+.copyTxt div p{
+    font-size: 30px;
+    color: var(--secondary-);
+    margin:0;
+}
+.copyTxt div button{
+    width: 90%;
+    padding: 1em 1.6em;
+    border: 3px solid var(--secondary-);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: var(--secondary-);
+    transition: all 0.2s;
+    position: relative;
+    animation: bn13bouncy 5s infinite linear;
+    font-size: 18px !important;
+    background-color: transparent;
+}
+.copyTxt div button:hover{
+    border: 5px  solid var(--secondary-);
+}
+
 
 
 /* CONTACT */
 .contact-main{
-    height: 90vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     text-align: center;
     background: var(--pure-);
+    margin: 50px 0 10px 0;
 }
 
 .contact{
     width: 65%;
-    height: 85vh;
+    height: fit-content;
     border: solid 1px var(--primary-);
     box-shadow: 1px 1px 10px #00C2FB;
     display: flex;
@@ -602,6 +639,7 @@ nav ul li a:hover{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='900' height='700' preserveAspectRatio='none' viewBox='0 0 900 700'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2976%26quot%3b)' fill='none'%3e%3crect width='900' height='700' x='0' y='0' fill='url(%23SvgjsLinearGradient2977)'%3e%3c/rect%3e%3cpath d='M729.1431116223823 278.4360656527684L787.6602260878682 163.58976205095826 672.813922486058 105.0726475854724 614.2968080205721 219.91895118728252z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M173.0163040393023 365.6499879089897L213.9130141931259 499.41709940301075 347.680125687147 458.5203892491872 306.78341553332336 324.75327775516615z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M241.37454737807113-50.20656946331428L43.424221454203234-95.90700314207328-2.2762122245557634 102.04332278179461 195.67411369931213 147.7437564605536z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M494.3271710353559 58.35741853526292L490.3014695786308 173.63842509144465 605.5824761348125 177.66412654816972 609.6081775915376 62.383119991988z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2976'%3e%3crect width='900' height='700' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='94.44%25' y1='107.14%25' x2='5.56%25' y2='-7.14%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient2977'%3e%3cstop stop-color='rgba(0%2c 194%2c 251%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0.48'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
     background-size: cover;
     margin-top: 20px;
+
 }
 .heading-form{
     color: var(--pure-);
@@ -642,7 +680,7 @@ max-height: 35vh;
     }
     .contact{
         width: 90%;
-        height: 85vh;
+        height: fit-content;
         border: solid 1px var(--primary-);
         box-shadow: 1px 1px 10px #00C2FB;
         display: flex;
@@ -653,7 +691,7 @@ max-height: 35vh;
 }
 
 .footer{
-    height: 129px;
+    height: 120px;
     background-color: var(--dark-);
 }
 .footerLogo{
