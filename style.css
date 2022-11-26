@@ -692,6 +692,7 @@ max-height: 35vh;
 
 .footer{
     background-color: var(--dark-);
+	height:130px;
 }
 .footerLogo{
     cursor:  default !important;
